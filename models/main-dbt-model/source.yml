@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: sf_db
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF10
+    tables:
+      - name: CUSTOMER
+        description: 'Custoemr data'
