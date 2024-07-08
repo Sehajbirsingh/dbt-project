@@ -1,6 +1,6 @@
 {{ config(
-    database='SNOWFLAKE_SAMPLE_DATA',
-    schema='TPCH_SF1',
+    database='my_database',
+    schema='my_schema',
     materialized='table') }}
 
-select distinct C_NATIONKEY from {{ref('customer')}}
+select distinct C_NATIONKEY from {{ ref('customer') }}
